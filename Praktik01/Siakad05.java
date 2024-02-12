@@ -3,7 +3,7 @@ public class Siakad05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in); 
 
-        String mk[]  = {"Pancasila", "Konsep Teknologi Informasi", "Critical Thinking and Problem Solving", "Matematika Dasar", "Bahasa Inggris", "Dasar Pemrograman", "Praktikum Dasar Pemrograman", "Keselamatan dan Kesehatan Kerja"};
+        String mk[]  = {"PAMB", "Konsep Teknologi Informasi", "Critical Thinking and Problem Solving", "Matematika Dasar", "Bahasa Inggris", "Dasar Pemrograman", "Praktikum Dasar Pemrograman", "Bahasa Indonesia", "Agama"};
         String huruf[] = {"A", "B+", "B","C+","C","D","E"};
         String nilaiHuruf = "";
         double setara[] = {4.0, 3.5, 3.0, 2.5, 2.0, 1.0, 0.0};
@@ -11,7 +11,7 @@ public class Siakad05 {
         double nilai = 0.0;
         double ip = 0.0, ipk = 0.0;
         int totalSks = 20; 
-        int n [] = new int [8];
+        int n [] = new int [9];
 
         System.out.println("================================");
         System.out.println(" Program Menghitung IP Semester ");
@@ -66,7 +66,7 @@ public class Siakad05 {
 
             System.out.println( mk[i] + "\t\t\t" + nilai + "\t\t\t\t" + nilaiHuruf + "\t\t\t\t" +nilaiSetara);
     }
-    ipk = ip/8;
+    ipk = ip/9;
     System.out.println("Nilai IPK : " + ipk);
 }
 }
