@@ -5,6 +5,7 @@ public class Rumus05 {
 
         int menu;
         double s,v,t;
+        // s = jarak, v = kecepatan, t = waktu
 
         do {
             System.out.println("==========================================");

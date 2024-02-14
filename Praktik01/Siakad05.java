@@ -3,7 +3,8 @@ public class Siakad05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner (System.in); 
 
-        String mk[]  = {"PAMB", "Konsep Teknologi Informasi", "Critical Thinking and Problem Solving", "Matematika Dasar", "Bahasa Inggris", "Dasar Pemrograman", "Praktikum Dasar Pemrograman", "Bahasa Indonesia", "Agama"};
+        String mk[]  = {"PAMB      ", "KTI       ", "CTPS      ", "MATDAS    ", 
+                        "BING      ", "DASPRO    ", "PRAKDASPRO", "BIND      ", "AGAMA     "};
         String huruf[] = {"A", "B+", "B","C+","C","D","E"};
         String nilaiHuruf = "";
         double setara[] = {4.0, 3.5, 3.0, 2.5, 2.0, 1.0, 0.0};
@@ -25,7 +26,7 @@ public class Siakad05 {
         System.out.println("====================");
         System.out.println("Hasil Konversi Nilai");
         System.out.println("====================");
-        System.out.println("MK\t\t\t\t\t Nilai Angka\t\t Nilai Huruf \t\t Bobot Nilai");
+        System.out.println("MK\t\t\t\tNilai Angka\t\tNilai Huruf \t\t\t Bobot Nilai");
         for (int i =0; i < mk.length; i++) {
             if (80 <= n[i] && n[i] <= 100) {
                 nilai = (double) n[i];
