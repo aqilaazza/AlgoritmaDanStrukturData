@@ -4,20 +4,16 @@ public class Sepeda {
     float kecepatan;
     int gear;
 
+    public Sepeda(float newKecepatan, int newGear) {
+      kecepatan = newKecepatan;
+      gear = newGear;
+    }
     public void tambahKecepatan (float increment) {
-       if (kecepatan + increment <= 20) {
-            kecepatan += increment;
-       } else {
-        kecepatan = 20;
-       } 
+      kecepatan += increment;
     }
 
     public void kurangiKecepatan (float decrement) {
-    if (kecepatan - decrement >= 0) {
-        kecepatan -= decrement;
-     } else {
-        kecepatan = 0;
-       }
+      kecepatan -= decrement;
     }
 
     public void cetakInfo() {
