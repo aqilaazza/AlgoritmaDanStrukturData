@@ -3,8 +3,8 @@ package Praktikum02;
 public class SnakeMain {
     
     public static void main(String [] args) {
-        Snake snake1 = new Snake (3,3);
-        Snake snake2 = new Snake (5,5);
+        Snake snake1 = new Snake (2,3);
+        Snake snake2 = new Snake (4,1);
 
         //Posisi Awal 
         System.out.println("First Position");
