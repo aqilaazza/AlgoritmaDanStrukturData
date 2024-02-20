@@ -4,6 +4,10 @@ public class Sepeda {
     float kecepatan;
     int gear;
 
+    public Sepeda () {
+      
+    }
+
     public Sepeda(float newKecepatan, int newGear) {
       kecepatan = newKecepatan;
       gear = newGear;
