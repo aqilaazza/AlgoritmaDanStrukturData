@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class PersegiPanjangDemo {
    public static void main(String[] args) {
     Scanner sc = new Scanner (System.in);
-    int jumlah;
+    int jumlah, panjang, lebar;
 
     System.out.print("Masukkan jumlah persegi panjang : ");
     jumlah = sc.nextInt();
@@ -12,16 +12,17 @@ public class PersegiPanjangDemo {
     PersegiPanjang[] arrayOfPersegiPanjang  = new PersegiPanjang[jumlah];
 
     for(int i = 0; i < jumlah; i++) {
-        arrayOfPersegiPanjang[i] = new PersegiPanjang();
-
         System.out.println("Persegi panjang ke-" + (i + 1));
         System.out.print("Masukkan panjang : ");
-        arrayOfPersegiPanjang[i].panjang = sc.nextInt();
+        panjang = sc.nextInt();
         System.out.print("Masukkan lebar : ");
-        arrayOfPersegiPanjang[i].lebar = sc.nextInt();
+        lebar = sc.nextInt();
+
+        arrayOfPersegiPanjang[i] = new PersegiPanjang(panjang, lebar);
         }
+
     for (int j = 0; j < jumlah; j++) {
-            System.out.println("Persegi Panjang ke-" + (j+1) + " : ");
+            System.out.print("Persegi Panjang ke-" + (j+1) + " : ");
             arrayOfPersegiPanjang[j].cetakInfo();
         }
    }
