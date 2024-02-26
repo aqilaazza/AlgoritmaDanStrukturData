@@ -19,10 +19,12 @@ public class PersegiPanjangDemo {
         lebar = sc.nextInt();
 
         arrayOfPersegiPanjang[i] = new PersegiPanjang(panjang, lebar);
+        arrayOfPersegiPanjang[i].hitungLuas(panjang, lebar);
+        arrayOfPersegiPanjang[i].hitungKeliling(panjang, lebar);
         }
 
     for (int j = 0; j < jumlah; j++) {
-            System.out.print("Persegi Panjang ke-" + (j+1) + " : ");
+            System.out.println("Persegi Panjang ke-" + (j+1) + " : ");
             arrayOfPersegiPanjang[j].cetakInfo();
         }
    }

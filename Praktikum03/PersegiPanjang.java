@@ -2,15 +2,25 @@ package Praktikum03;
 
 public class PersegiPanjang {
     public int panjang;
-    public int lebar; 
-
-    public void cetakInfo() {
-        System.out.println("Panjang : " + panjang + ", Lebar : " +lebar);
-    }
+    public int lebar;
+    public int luas;
+    public int keliling; 
 
     public PersegiPanjang(int p, int l) {
         this.panjang = p;
         this.lebar = l;
+    }
+
+    public void hitungLuas(int p, int l) {
+        luas = p * l;
+    }
+
+    public void hitungKeliling(int p, int l) {
+        keliling = 2 * (p + l);
+    }
+    public void cetakInfo() {
+        System.out.print("Panjang : " + panjang + ", Lebar : " +lebar);
+        System.out.println(" , Luas : " + luas + ", Keliling : " + keliling);
     }
 
     public static void main(String[] args) {
