@@ -5,8 +5,7 @@ public class Dragon {
      int y; //vertikal
      int direction;
 
-
-    public void dragon (int x, int y, int direction) {
+    public Dragon (int x, int y, int direction) {
        this.x = x;
        this.y = y;
        this.direction = direction;
@@ -37,6 +36,6 @@ public class Dragon {
         }
      }
      public void printStatus() {
-        System.out.println("Position : " +x+ " , " +y+ " Direction : " +direction);
+        System.out.println("Position : " +x+ " , " +y+ ", Direction : " +direction);
      }
 }
