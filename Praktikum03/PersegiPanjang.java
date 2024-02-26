@@ -4,6 +4,10 @@ public class PersegiPanjang {
     public int panjang;
     public int lebar; 
 
+    public void cetakInfo() {
+        System.out.println("Panjang : " + panjang + ", Lebar : " +lebar);
+    }
+
     public static void main(String[] args) {
         PersegiPanjang [] arrayOfPersegiPanjang = new PersegiPanjang[3];
 

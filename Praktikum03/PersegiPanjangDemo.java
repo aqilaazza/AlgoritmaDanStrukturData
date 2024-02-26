@@ -2,7 +2,6 @@ package Praktikum03;
 import java.util.Scanner;
 
 public class PersegiPanjangDemo {
-
    public static void main(String[] args) {
     Scanner sc = new Scanner (System.in);
     int jumlah;
@@ -10,7 +9,7 @@ public class PersegiPanjangDemo {
     System.out.print("Masukkan jumlah persegi panjang : ");
     jumlah = sc.nextInt();
 
-    PersegiPanjang[] arrayOfPersegiPanjang = new PersegiPanjang[jumlah];
+    PersegiPanjang[] arrayOfPersegiPanjang  = new PersegiPanjang[jumlah];
 
     for(int i = 0; i < jumlah; i++) {
         arrayOfPersegiPanjang[i] = new PersegiPanjang();
@@ -22,7 +21,8 @@ public class PersegiPanjangDemo {
         arrayOfPersegiPanjang[i].lebar = sc.nextInt();
         }
     for (int j = 0; j < jumlah; j++) {
-            System.out.println("Persegi Panjang ke-" + (j+1) + " , panjang : " + arrayOfPersegiPanjang[j].panjang + " , lebar : " + arrayOfPersegiPanjang[j].lebar);
+            System.out.println("Persegi Panjang ke-" + (j+1) + " : ");
+            arrayOfPersegiPanjang[j].cetakInfo();
         }
    }
 }
