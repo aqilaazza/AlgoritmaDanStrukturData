@@ -30,7 +30,6 @@ public class BarangMain {
             System.out.println("Data Barang ke- " +(j + 1));
             barang.tampilkanInfoBarang();
             j++;
-
         }
 
         System.out.println("Tambahkan stok barang : ");

@@ -16,9 +16,9 @@ public class Barang {
         System.out.println("Stok berhasil ditambahkan. ");
     }
     public void tampilkanInfoBarang() {
-        System.out.println("Nama barang  : " + this.nama);
-        System.out.println("Harga barang : " + this.harga);
-        System.out.println("Stok barang  : " + this.stok);
+        System.out.println("Nama barang  : " + nama);
+        System.out.println("Harga barang : " + harga);
+        System.out.println("Stok barang  : " + stok);
 
     }
 }
