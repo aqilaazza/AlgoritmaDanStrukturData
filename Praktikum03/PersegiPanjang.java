@@ -7,8 +7,8 @@ public class PersegiPanjang {
     public int keliling; 
 
     public PersegiPanjang(int p, int l) {
-        this.panjang = p;
-        this.lebar = l;
+        panjang = p;
+        lebar = l;
     }
 
     public void hitungLuas(int p, int l) {

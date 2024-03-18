@@ -11,6 +11,7 @@ public class BarangMain {
         sc.nextLine();
 
         Barang [] dataBarang = new Barang[jumlah];
+        Barang barang1 = new Barang();
 
         for(int i = 0; i < jumlah; i++) {
             System.out.println("Masukkan data barang ke-" + (i+1));
