@@ -36,4 +36,37 @@ public class Kelas {
             }
         }
     }
+
+    public void selectionSortByUmur() {
+        int n = daftarMahasiswa.length;
+
+        for(int i = 0; i < n - 1 ; i++) {
+            int minIndex = i;
+
+            for(int j = i + 1; j < n; j++) {
+                if(daftarMahasiswa[j].umur > daftarMahasiswa[minIndex].umur) {
+                    minIndex  = j;
+                }
+            }
+
+            Mahasiswa temp = daftarMahasiswa[minIndex];
+            daftarMahasiswa[minIndex] = daftarMahasiswa[i];
+            daftarMahasiswa[i] = temp;
+        }
+    }
+
+    public void insertionSortByIPKDesc() {
+        int n = daftarMahasiswa.length;
+
+        for(int i = 1; i < n ; i++) {
+            Mahasiswa key = daftarMahasiswa[i];
+            int j = i - 1;
+
+            while(j >= 0 && daftarMahasiswa[j].ipk < key.ipk) {
+                daftarMahasiswa[j + 1] = daftarMahasiswa[j];
+                j = j - 1;
+            }
+            daftarMahasiswa[j + 1] = key;
+        }
+    }
 }

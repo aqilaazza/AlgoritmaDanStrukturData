@@ -12,6 +12,6 @@ public class Mahasiswa {
     }
 
     public void displayInfo() {
-        System.out.println(nama + "(Umur : " + umur + " IPK : " + ipk + ")") ;
+        System.out.println(nama + " ( Umur : " + umur + " IPK : " + ipk + " )") ;
     }
 }

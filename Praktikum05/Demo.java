@@ -16,6 +16,8 @@ public class Demo {
         kelas1A.add(mhs5);
 
         kelas1A.bubleSortByIPK();
+        kelas1A.selectionSortByUmur();
+        kelas1A.insertionSortByIPKDesc();
         kelas1A.displayInfo();
     }
 }
