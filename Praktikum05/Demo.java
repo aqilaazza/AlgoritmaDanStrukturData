@@ -16,8 +16,30 @@ public class Demo {
         kelas1A.add(mhs5);
 
         kelas1A.bubleSortByIPK();
+        kelas1A.displayInfo();
         kelas1A.selectionSortByUmur();
+        kelas1A.displayInfo();
         kelas1A.insertionSortByIPKDesc();
         kelas1A.displayInfo();
+        Mahasiswa mahasiswaDitemukan = kelas1A.sequentialSearchByNama("ud");
+        if (mahasiswaDitemukan != null) {
+            System.out.println("Data mahasiswa ditemukan dengan inisial nama (ud) adalah : ");
+            mahasiswaDitemukan.displayInfo();
+        } else {
+            System.out.println("Mahasiswa dengan inisial nama (ca) tidak ditemukan.");
+        }
+
+        System.out.println();
+        
+        Mahasiswa[] umurDitemukan = kelas1A.binarysearchByUmur(18);
+        if (umurDitemukan.length > 0) {
+            System.out.println("Data mahasiswa ditemukan dengan umur (18) adalah : ");
+            for (Mahasiswa mahasiswa : umurDitemukan) {
+                mahasiswa.displayInfo();
+            }
+        } else {
+            System.out.println("Data mahasiswa dengan umur (18) tidak ditemukan.");
+        }
     }
+
 }

@@ -29,7 +29,7 @@ public class SortingAngka {
             }
 
             int temp = numbers[minIndex];
-            numbers[minIndex] = numbers [i];
+            numbers[minIndex] = numbers[i];
             numbers[i] = temp;
         }
         return numbers;

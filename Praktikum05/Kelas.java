@@ -1,11 +1,12 @@
 package Praktikum05;
 
 public class Kelas {
-    Mahasiswa[] daftarMahasiswa;
-    int index;
+    public Mahasiswa[] daftarMahasiswa;
+    public int index;
 
     public Kelas(int kuota) {
         daftarMahasiswa = new Mahasiswa[kuota];
+        index = 0;
     }
 
     public void add(Mahasiswa mahasiswa) {
@@ -21,6 +22,8 @@ public class Kelas {
         for (Mahasiswa mahasiswa : daftarMahasiswa) {
             mahasiswa.displayInfo();
         }
+
+        System.out.println();
     }
 
     public void bubleSortByIPK() {
@@ -35,6 +38,7 @@ public class Kelas {
                 }
             }
         }
+        System.out.println("Urutan Ipk dari yang terkecil : ");
     }
 
     public void selectionSortByUmur() {
@@ -53,6 +57,7 @@ public class Kelas {
             daftarMahasiswa[minIndex] = daftarMahasiswa[i];
             daftarMahasiswa[i] = temp;
         }
+        System.out.println("Urutan umur dari yang terbesar : ");
     }
 
     public void insertionSortByIPKDesc() {
@@ -68,5 +73,41 @@ public class Kelas {
             }
             daftarMahasiswa[j + 1] = key;
         }
+        System.out.println("urutan ipk dari yang terbesar : ");
     }
+    
+
+    public Mahasiswa sequentialSearchByNama(String keyword) {
+        for (int i = 0; i < index; i++) {
+            if (daftarMahasiswa[i].getNama().toLowerCase().contains(keyword.toLowerCase())) {
+                return daftarMahasiswa[i];
+            }
+        }
+        return null;
+    }
+
+    public Mahasiswa[] binarysearchByUmur(int umur) {
+       int jumlah = 0;
+       for(int i = 0; i < index; i++) {
+        if(daftarMahasiswa[i].getUmur() == umur) {
+            jumlah++;
+        }
+       }
+
+       Mahasiswa[] result = new Mahasiswa[jumlah];
+       int resultIndex = 0;
+
+       for(int i = 0; i < index; i++) {
+        if (daftarMahasiswa[i].getUmur() == umur) {
+            result[resultIndex] = daftarMahasiswa[i];
+            resultIndex++;
+        }
+       }
+
+       if(resultIndex == 0) {
+        System.out.println("Tidak ditemukan mahasiswa dengan umur " +umur);
+       
+    }
+       return result;
+    }   
 }

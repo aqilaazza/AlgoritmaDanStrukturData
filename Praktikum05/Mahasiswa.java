@@ -14,4 +14,14 @@ public class Mahasiswa {
     public void displayInfo() {
         System.out.println(nama + " ( Umur : " + umur + " IPK : " + ipk + " )") ;
     }
+
+    public String getNama () {
+        return nama;
+    }
+    public int getUmur () {
+        return umur;
+    }
+    public double getIpk () {
+        return ipk;
+    }
 }

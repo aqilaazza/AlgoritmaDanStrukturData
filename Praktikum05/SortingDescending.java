@@ -41,7 +41,7 @@ public class SortingDescending {
             int key = numbers[i];
             int j = i - 1;
 
-            while(j >= 0 && numbers[j] < key) {
+            while(j >= 0 && numbers[j] < key) { //mengatur dari besar ke kecil
                 numbers[j + 1] = numbers[j];
                 j = j - 1;
             }
