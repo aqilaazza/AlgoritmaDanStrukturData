@@ -1,7 +1,13 @@
 package Praktikum05;
 
+import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) {
+        String inputNama;
+        int inputUmur;
+
+        Scanner sc = new Scanner(System.in);
+
         Kelas kelas1A = new Kelas (5) ;
         Mahasiswa mhs1 = new Mahasiswa("Ani", 18, 4.00);
         Mahasiswa mhs2 = new Mahasiswa("Budi", 19, 3.50);
@@ -21,24 +27,28 @@ public class Demo {
         kelas1A.displayInfo();
         kelas1A.insertionSortByIPKDesc();
         kelas1A.displayInfo();
-        Mahasiswa mahasiswaDitemukan = kelas1A.sequentialSearchByNama("ud");
+        System.out.print("Masukkan nama mahasiswa : ");
+        inputNama = sc.nextLine();
+        Mahasiswa mahasiswaDitemukan = kelas1A.sequentialSearchByNama(inputNama);
         if (mahasiswaDitemukan != null) {
-            System.out.println("Data mahasiswa ditemukan dengan inisial nama (ud) adalah : ");
+            System.out.println("Data mahasiswa ditemukan dengan inisial nama mahasiswa " +inputNama+ " adalah : " );
             mahasiswaDitemukan.displayInfo();
         } else {
-            System.out.println("Mahasiswa dengan inisial nama (ca) tidak ditemukan.");
+            System.out.println("Nama inisial mahasiswa " +inputNama+ " tidak ditemukan.");
         }
 
         System.out.println();
-        
-        Mahasiswa[] umurDitemukan = kelas1A.binarysearchByUmur(18);
+
+        System.out.print("Masukkan umur mahasiswa : ");
+        inputUmur = sc.nextInt();
+        Mahasiswa[] umurDitemukan = kelas1A.binarysearchByUmur(inputUmur);
         if (umurDitemukan.length > 0) {
-            System.out.println("Data mahasiswa ditemukan dengan umur (18) adalah : ");
+            System.out.println("Data mahasiswa ditemukan dengan umur " + inputUmur+ " adalah : ");
             for (Mahasiswa mahasiswa : umurDitemukan) {
                 mahasiswa.displayInfo();
             }
         } else {
-            System.out.println("Data mahasiswa dengan umur (18) tidak ditemukan.");
+            System.out.println("Data mahasiswa dengan umur " +inputUmur+ " tidak ditemukan.");
         }
     }
 

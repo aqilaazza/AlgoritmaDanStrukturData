@@ -94,7 +94,7 @@ public class Sorting {
         }
 
         System.out.println("\nBinary Search : ");
-        int[] binarySearch = { 50, 40, 30, 20, 10, 5, 5};
+        int[] binarySearch = { 5, 5, 10, 20, 30, 40, 50};
         int indeks = binarySearch(binarySearch, 5);
 
         if (indeks != -1) {
