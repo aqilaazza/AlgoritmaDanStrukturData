@@ -47,7 +47,7 @@ public class Sorting {
         return -1;
     }
 
-    public static int binarySearch(int [] arr, int key) {
+    public static int binarySearch(int [] arr, int key) { 
         if(arr.length == 0) {
         }
         if (arr[0] < arr[arr.length - 1]) {

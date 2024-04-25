@@ -6,7 +6,7 @@ public class SortingAngka {
 
         for (int i = 0; i < n - 1; i++) {
             for (int j =  0; j < n - i - 1; j++) { 
-                if (numbers[j] > numbers[j + 1]) {
+                if (numbers[j] > numbers[j + 1]) { //mengatur dari kecil ke besar
                     int temp = numbers[j];
                     numbers[j] = numbers[j + 1];
                     numbers[j + 1] = temp;
@@ -23,7 +23,7 @@ public class SortingAngka {
             int minIndex = i;
 
             for (int j =  i + 1; j < n; j++) {
-                if (numbers[j] < numbers[minIndex]) {
+                if (numbers[j] < numbers[minIndex]) { //mengatur dari kecil kebesar
                     minIndex = j;
                 }
             }
@@ -42,7 +42,7 @@ public class SortingAngka {
             int key = numbers[i];
             int j = i - 1;
 
-            while (j >= 0 && numbers[j] > key) {
+            while (j >= 0 && numbers[j] > key) { //mengatur dari kecil ke besar
                 numbers[j + 1] = numbers[j];
                 j = j - 1;
             }

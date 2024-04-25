@@ -27,6 +27,7 @@ public class Demo {
         kelas1A.displayInfo();
         kelas1A.insertionSortByIPKDesc();
         kelas1A.displayInfo();
+        
         System.out.print("Masukkan nama mahasiswa : ");
         inputNama = sc.nextLine();
         Mahasiswa mahasiswaDitemukan = kelas1A.sequentialSearchByNama(inputNama);
