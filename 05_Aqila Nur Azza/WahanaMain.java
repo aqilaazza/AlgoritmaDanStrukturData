@@ -74,7 +74,7 @@ public class WahanaMain {
                         System.out.println("===========================================");
                     }
                     System.out.println();
-                    break;
+                    // break;
                 
                 case 3:
                     Wahana.sortingDataByBiaya();

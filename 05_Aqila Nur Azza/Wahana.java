@@ -17,7 +17,7 @@ public class Wahana {
         this.kategori = kategori;
         this.nama = nama;
         this.durasi = durasi;
-        this.biaya = hitungBiaya();
+        biaya = hitungBiaya();
         updateTotalBiaya();
     }
 
