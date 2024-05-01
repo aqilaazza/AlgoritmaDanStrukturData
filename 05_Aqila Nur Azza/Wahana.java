@@ -51,7 +51,7 @@ public class Wahana {
     }
 
     public static Wahana sequentialSearchByNama(String keyword) {
-        for (int i = 0; i < index; i++) {
+        for (int i = 0; i < index - 1; i++) {
             if (daftarWahana[i].getNama().toLowerCase().contains(keyword.toLowerCase())) {
                 return daftarWahana[i];
             }
@@ -60,7 +60,7 @@ public class Wahana {
     }
 
     public static void sortingDataByBiaya() {
-        for (int i = 0; i < index - 1; i++) {
+        for (int i = 0; i < index; i++) {
             for (int j = i + 1; j < index; j++) {
                 if (daftarWahana[i].biaya < daftarWahana[j].biaya) {
                     Wahana temp = daftarWahana[i];

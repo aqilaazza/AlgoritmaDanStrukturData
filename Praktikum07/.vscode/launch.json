@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "meiDemo",
+            "request": "launch",
+            "mainClass": "meiDemo",
+            "projectName": "Praktikum07_a7b9053a"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Stack2",
+            "request": "launch",
+            "mainClass": "Stack2",
+            "projectName": "Praktikum07_a7b9053a"
+        },
+        {
+            "type": "java",
+            "name": "StackDemo",
+            "request": "launch",
+            "mainClass": "StackDemo",
+            "projectName": "Praktikum07_a7b9053a"
+        },
+        {
+            "type": "java",
+            "name": "mei$meiDemo",
+            "request": "launch",
+            "mainClass": "mei$meiDemo",
+            "projectName": "Praktikum07_a7b9053a"
+        }
+    ]
+}
