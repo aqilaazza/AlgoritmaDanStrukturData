@@ -129,7 +129,7 @@ public class LinkedList {
             while (currentNode.next != null) {
                 if (currentNode.next.data == key) {
                     currentNode.next = currentNode.next.next;
-                    // break;
+                    break;
                 }
                 currentNode = currentNode.next;
             }
