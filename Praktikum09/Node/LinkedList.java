@@ -1,3 +1,4 @@
+
 public class LinkedList {
     Node head;
 
@@ -26,7 +27,7 @@ public class LinkedList {
         if(isEmpty()) {
             head = newNode;
         } else {
-            newNode.next = head;
+            newNode.next = head; //nymbungin
             head = newNode;
         }
     }
@@ -40,7 +41,7 @@ public class LinkedList {
             Node currentNode = head;
 
             while(currentNode.next != null) {
-                currentNode = currentNode.next;
+                currentNode = currentNode.next; //mengulangi apabila tidak null
             }
 
             currentNode.next = newNode;
@@ -60,7 +61,7 @@ public class LinkedList {
                     break;
                 }
                 currentNode = currentNode.next;
-         } while (currentNode != null);
+            } while (currentNode != null);
         } else {
             System.out.println("Linked list kosong");
         }

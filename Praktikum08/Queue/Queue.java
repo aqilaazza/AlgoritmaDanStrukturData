@@ -54,10 +54,10 @@ public class Queue {
             System.out.println("Queue sudah penuh");
         } else {
             if (isEmpty()) {
-                front = rear =0;
-            } else if (rear == max -1) {
-                rear = 0;
-            } else {
+                front = rear = 0;
+            } else if (rear == max -1) { //max terpenuhi
+                rear = 0; 
+            } else { 
                 rear = rear + 1;
             }
 
