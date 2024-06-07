@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 public class Customer {
     public int id;
     public String name;
@@ -12,6 +14,7 @@ public class Customer {
     }
 
     public String toString() {
-        return "ID : " + this.id + ", Nama : " + this.name; 
+        return "ID : " + this.id + " Nama : " + this.name; 
     }
+
 }

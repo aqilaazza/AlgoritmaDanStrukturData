@@ -14,14 +14,28 @@ public class DemoArrayList {
 
         customers.add(2, new Customer(100, "Rosa"));
 
+        System.out.println("Mencari index ");
         System.out.println(customers.indexOf(customer2));
+        System.out.println();
 
+        System.out.println("Mengakses elemen tertentu ");
         Customer customer = customers.get(1);
         System.out.println((customer.name));
         customer.name = "Budi Utomo";
+        System.out.println();
+
+        ArrayList<Customer> newCustomers = new ArrayList<>();
+        newCustomers.add(new Customer(201, "Della"));
+        newCustomers.add(new Customer(202, "Victor"));
+        newCustomers.add(new Customer(203, "Sarah"));
+
+        customers.addAll(newCustomers);
 
         for(Customer cust : customers) {
             System.out.println(cust.toString());
         }
+        System.out.println();
+        
+        System.out.println(customers);
     }
 }
