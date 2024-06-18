@@ -1,4 +1,4 @@
-package Praktikum04;
+
 
 public class Faktorial {
     public int nilai;

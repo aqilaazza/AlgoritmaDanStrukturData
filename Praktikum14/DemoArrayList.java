@@ -31,6 +31,9 @@ public class DemoArrayList {
 
         customers.addAll(newCustomers);
 
+
+        System.out.println("Auto sort :");
+        customers.sort((Zaskia,Budi)->Zaskia.name.compareTo(Budi.name));
         for(Customer cust : customers) {
             System.out.println(cust.toString());
         }

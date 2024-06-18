@@ -1,6 +1,6 @@
 public class Graph{
     public int numVertices;
-    public int[][] adjMatrix;
+    public int[][] adjMatrix; 
     public int weight; // modifikasi untuk menambahkan weight
 
     public Graph (int numVertices) {
@@ -24,7 +24,7 @@ public class Graph{
         for (int i = 0; i < numVertices; i++) {
             System.out.print(i + " : ");
 
-            for (int j = 0; j < numVertices; j++) { // modifikasi untuk menambahkan weight
+               for (int j = 0; j < numVertices; j++) {
                 System.out.print(adjMatrix[i][j] + " ");
             }
 

@@ -12,6 +12,17 @@ public class Book {
     }
 
     public String toString() {
-        return "ISBN : " + this.isbn  + " Title " + this.title;
+        return "ISBN : " + this.isbn  + " Title : " + this.title;
+    }
+
+    public boolean equals(Object obj) { //Finding Search
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Book book = (Book) obj;
+        return isbn.equals(book.isbn) && title.equals(book.title);
+    }
+
+    public int hashCode() { //finding search
+        return Objects.hash(isbn, title);
     }
 }

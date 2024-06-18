@@ -76,7 +76,7 @@ public class BinaryTree {
         }
     }
 
-    Node getSuccessor(Node del) { // penghapusan node yang memiliki 2 child 
+    Node getSuccessor(Node del) { // pencarian node penganti current yang memiliki 2 child 
         Node successor = del.right;
         Node successorParent = del;
 
@@ -85,8 +85,8 @@ public class BinaryTree {
             successor = successor.left;
         }
 
-        if (successor != del.right) {
-            successorParent.left = successor.right; //revisi
+        if (successor != del.right) { //apakah masih punya anak
+            successorParent.left = successor.right; 
             successor.right = del.right;
         }
         return successor;
@@ -120,7 +120,7 @@ public class BinaryTree {
         if (current == null) {
             System.out.println("Data tidak ditemukan!");
             return;
-        } else {
+        } else { 
             //jika tidak ada child, simply delete it
             if(current.left == null && current.right == null) {
                 if(current == root) {
@@ -159,16 +159,17 @@ public class BinaryTree {
                 } else {
                     if(isLeftChild) {
                         parent.left = successor;
+            
                     } else {
                         parent.right = successor;
                     }
-                    successor.left = current.left; //revisi
+                    successor.left = current.left; 
                 }
             }
         }
     }
 
-    void printLeaf(Node node) {
+    void printLeaf(Node node) { //print node yang tidak memiliki child 
         if(node != null) {
             if(node.left == null && node.right == null) {
                 System.out.print(" " + node.data);
@@ -179,7 +180,7 @@ public class BinaryTree {
         }
     }
 
-    int jumlahLeaf(Node node) {
+    int jumlahLeaf(Node node) { //menghitung jumlah node yang tidak memiliki child
       if (node == null) {
         return 0;
       }

@@ -14,6 +14,7 @@ public class GraphDemo {
         // menampilkan edge
         System.out.println("Edge antara V0 dan V1 : " + g.getEdge(0,1)); // terdapat edge 
         System.out.println("Edge antara V0 dan V3 : " + g.getEdge(0, 3)); // tidak terdapat edge
+    
 
         //menampilkan degree
         g.printGetDegree();
