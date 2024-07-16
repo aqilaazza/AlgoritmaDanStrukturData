@@ -1,3 +1,4 @@
+package Praktikum07;
 public class Stack2 {
     public int size;
     public char[] data;

@@ -1,16 +1,17 @@
+package Praktikum07;
 public class Stack {
     public int size;
     public String[] data;
     public int top;
 
-    public Stack (String postfix) {
-        this.size = postfix;
-        this.data = new String[postfix];
+    public Stack (int size) {
+        this.size = size;
+        this.data = new String[size];
         this.top = -1;
     }
 
     public Stack(String postfix) {
-        //TODO Auto-generated constructor stub
+        
     }
 
     public boolean isEmpty() {
